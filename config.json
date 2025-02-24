@@ -1,0 +1,15 @@
+{
+  "remote_config": {
+    "host": "cluster.example.com",
+    "user": "username"
+  },
+  "16s-analysis": {
+    "remote_paths": {
+      "database": "/path/to/remote/database",
+      "input_dir": "/path/to/transferred/inputs",
+      "output_dir": "/path/to/outputs",
+      "work_dir": "/path/to/work"
+    },
+    "pipeline_command": "nextflow run 16s-pipeline.nf --input {input_dir} --output {output_dir} --database {database}"
+  }
+}
